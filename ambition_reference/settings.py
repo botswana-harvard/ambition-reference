@@ -37,11 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ambition.apps.AppConfig',
     'django_crypto_fields.apps.AppConfig',
     'edc_reference.apps.AppConfig',
-    'ambition_subject.apps.EdcVisitTrackingAppConfig',
-    'ambition.apps.AppConfig',
+    'edc_visit_schedule.apps.AppConfig',
     'ambition_reference.apps.AppConfig',
+    'ambition_visit_schedule.apps.AppConfig',
 ]
 
 MIDDLEWARE = [

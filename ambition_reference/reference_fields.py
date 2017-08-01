@@ -32,7 +32,7 @@ configs = {
     'ambition_subject.studyterminationconclusion': [
         'report_datetime', 'termination_reason'],
 }
-print(configs)
+
 for model, fields in configs.items():
     print('model:', model, 'fields', fields)
     site_reference_configs.add_fields_to_config(
