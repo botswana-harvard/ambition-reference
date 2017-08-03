@@ -25,16 +25,18 @@ configs = {
     'ambition_subject.radiology': ['is_cxr_done'],
     'ambition_subject.lumbarpuncturecsf': ['reason_for_lp'],
     'ambition_subject.recurrencesymptom': ['meningitis_symptom'],
-    'ambition_subject.subjectconsent': ['version'],
     'ambition_subject.subjectrequisition': ['requisition_datetime'],
     'ambition_subject.week2': ['discharged'],
     'ambition_subject.week4': ['fluconazole_dose'],
     'ambition_subject.week16': ['patient_alive'],
-    'ambition_subject.studyterminationconclusion': [
-        'report_datetime', 'termination_reason'],
+    'ambition_subject.studyterminationconclusion': ['termination_reason'],
     'ambition_subject.subjectvisit': ['reason_unscheduled'],
 }
 
 for model, fields in configs.items():
     site_reference_configs.add_fields_to_config(
         model, fields)
+
+reference = ReferenceModelConfig(
+    model='ambition_subject.subjectconsent', fields=['consent_datetime'])
+site_reference_configs.register(reference)
