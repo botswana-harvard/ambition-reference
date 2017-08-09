@@ -1,8 +1,11 @@
-from edc_reference import site_reference_configs, ReferenceModelConfig
+from edc_reference import site_reference_configs
 from edc_visit_schedule.site_visit_schedules import site_visit_schedules
 
 site_reference_configs.register_from_visit_schedule(
     site_visit_schedules=site_visit_schedules)
+
+site_reference_configs.unregister('ambition_subject.enrollment')
+site_reference_configs.unregister('ambition_subject.disenrollment')
 
 configs = {
     'ambition_subject.adverseevent': ['ae_severity_grade'],
@@ -37,6 +40,6 @@ for model, fields in configs.items():
     site_reference_configs.add_fields_to_config(
         model, fields)
 
-reference = ReferenceModelConfig(
-    model='ambition_subject.subjectconsent', fields=['consent_datetime'])
-site_reference_configs.register(reference)
+# reference = ReferenceModelConfig(
+#     model='ambition_subject.subjectconsent', fields=['consent_datetime'])
+# site_reference_configs.register(reference)
