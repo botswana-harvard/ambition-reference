@@ -14,7 +14,6 @@ configs = {
         'microbiology', 'radiology', 'protocol_deviation', 'blood_result',
         'lumbar_puncture', 'recurrence_symptom', 'death_report',
         'death_report_tmg1', 'death_report_tmg2'],
-    'ambition_subject.clinicnote': ['vital_signs'],
     'ambition_subject.adverseeventfollowup': ['outcome'],
     'ambition_subject.adverseeventtmg': ['ae_received_datetime'],
     'ambition_subject.bloodresult': ['wbc'],
