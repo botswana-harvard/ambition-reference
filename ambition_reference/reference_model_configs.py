@@ -4,9 +4,6 @@ from edc_visit_schedule.site_visit_schedules import site_visit_schedules
 site_reference_configs.register_from_visit_schedule(
     site_visit_schedules=site_visit_schedules)
 
-site_reference_configs.unregister('ambition_subject.enrollment')
-site_reference_configs.unregister('ambition_subject.disenrollment')
-
 configs = {
     'ambition_subject.adverseevent': ['ae_severity_grade'],
     'ambition_subject.prnmodel': [
