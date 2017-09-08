@@ -17,6 +17,6 @@ configs = {
     'ambition_subject.studyterminationconclusion': ['termination_reason'],
 }
 
-for model, fields in configs.items():
+for reference_name, fields in configs.items():
     site_reference_configs.add_fields_to_config(
-        model, fields)
+        name=reference_name, fields=fields)
