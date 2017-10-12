@@ -10,8 +10,7 @@ configs = {
     'ambition_subject.prnmodel': [
         'adverse_event', 'adverse_event_tmg', 'adverse_event_followup',
         'microbiology', 'radiology', 'protocol_deviation', 'blood_result',
-        'lumbar_puncture', 'recurrence_symptom', 'death_report',
-        'death_report_tmg1', 'death_report_tmg2'],
+        'lumbar_puncture', 'recurrence_symptom', 'death_report'],
     'ambition_subject.deathreport': ['cause_of_death'],
     'ambition_subject.deathreporttmg1': ['cause_of_death'],
     'ambition_subject.patienthistory': ['cd4_date', 'viral_load_date'],
