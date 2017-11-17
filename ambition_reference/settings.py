@@ -17,6 +17,7 @@ import sys
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 APP_NAME = 'ambition_reference'
+ETC_DIR = os.path.join(BASE_DIR, 'etc')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
@@ -38,12 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'ambition.apps.AppConfig',
-    'django_crypto_fields.apps.AppConfig',
+    'edc_identifier.apps.AppConfig',
     'edc_reference.apps.AppConfig',
+    'edc_timepoint.apps.AppConfig',
     'edc_visit_schedule.apps.AppConfig',
-    'ambition_reference.apps.AppConfig',
     'ambition_visit_schedule.apps.AppConfig',
+    'ambition_reference.apps.AppConfig',
 ]
 
 MIDDLEWARE = [
@@ -121,11 +122,14 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'ambition_reference', 'static')
-KEY_PATH = os.path.join(BASE_DIR, 'crypto_fields')
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+EDC_SYNC_SERVER_IP = None
+EDC_SYNC_FILES_USER = None
+EDC_SYNC_FILES_REMOTE_HOST = None
+EDC_SYNC_FILES_USB_VOLUME = None
 
 if 'test' in sys.argv:
 
