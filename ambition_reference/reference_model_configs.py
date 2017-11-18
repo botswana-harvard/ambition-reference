@@ -13,7 +13,7 @@ configs = {
         'lumbar_puncture', 'recurrence_symptom', 'death_report'],
     'ambition_subject.deathreport': ['cause_of_death'],
     'ambition_subject.deathreporttmg1': ['cause_of_death'],
-    'ambition_subject.education': ['head_of_household'],
+    'ambition_subject.education': ['household_head'],
     'ambition_subject.patienthistory': ['cd4_date', 'viral_load_date'],
     'ambition_subject.protocoldeviationviolation': ['deviation_or_violation'],
     'ambition_subject.medicalexpenses': ['care_before_hospital'],
