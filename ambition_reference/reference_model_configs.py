@@ -5,7 +5,9 @@ site_reference_configs.register_from_visit_schedule(
     site_visit_schedules=site_visit_schedules)
 
 configs = {
-    'ambition_subject.prnmodel': ['blood_result', 'microbiology', 'radiology', 'lumbar_puncture'],
+    'ambition_subject.prnmodel': [
+        'blood_result', 'microbiology', 'radiology', 'lumbar_puncture',
+        'cd4', 'viral_load'],
     #     'ambition_subject.deathreport': ['cause_of_death'],
     #     'ambition_subject.deathreporttmg1': ['cause_of_death'],
     'ambition_subject.education': ['household_head'],
