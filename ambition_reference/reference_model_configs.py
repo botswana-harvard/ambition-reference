@@ -8,14 +8,9 @@ configs = {
     'ambition_subject.prnmodel': [
         'blood_result', 'microbiology', 'radiology', 'lumbar_puncture',
         'cd4', 'viral_load', 'fbc', 'chemistry'],
-    #     'ambition_subject.deathreport': ['cause_of_death'],
-    #     'ambition_subject.deathreporttmg1': ['cause_of_death'],
     'ambition_subject.education': ['household_head'],
     'ambition_subject.patienthistory': ['cd4_date', 'viral_load_date'],
-    #     'ambition_subject.protocoldeviationviolation': ['deviation_or_violation'],
     'ambition_subject.medicalexpenses': ['care_before_hospital'],
-    #     'ambition_subject.recurrencesymptom': ['patient_readmitted', 'lp_completed'],
-    #     'ambition_subject.studyterminationconclusion': ['termination_reason'],
     'ambition_subject.week16': ['patient_alive'],
 }
 
