@@ -7,4 +7,4 @@ from pprint import pprint
 class TestReference(TestCase):
 
     def test_(self):
-        pprint(site_reference_configs.registry)
+        site_reference_configs.registry

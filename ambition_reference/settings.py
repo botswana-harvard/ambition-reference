@@ -18,6 +18,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 APP_NAME = 'ambition_reference'
 ETC_DIR = os.path.join(BASE_DIR, 'etc')
+
+SITE_ID = 40
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
@@ -39,10 +42,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django_crypto_fields.apps.AppConfig',
+    'django_revision.apps.AppConfig',
+    'edc_appointment.apps.AppConfig',
+    'edc_action_item.apps.AppConfig',
+    'edc_protocol.apps.AppConfig',
     'edc_identifier.apps.AppConfig',
     'edc_reference.apps.AppConfig',
     'edc_timepoint.apps.AppConfig',
     'edc_visit_schedule.apps.AppConfig',
+    # 'ambition_subject.apps.AppConfig',
+    # 'ambition_ae.apps.AppConfig',
+    # 'ambition_prn.apps.AppConfig',
     'ambition_visit_schedule.apps.AppConfig',
     'ambition_reference.apps.AppConfig',
 ]
@@ -126,6 +138,13 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'ambition_reference', 'static')
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+DASHBOARD_URL_NAMES = {
+    'subject_listboard_url': 'ambition_dashboard:subject_listboard_url',
+    'screening_listboard_url': 'ambition_dashboard:screening_listboard_url',
+    'subject_dashboard_url': 'ambition_dashboard:subject_dashboard_url',
+}
+
 EDC_SYNC_SERVER_IP = None
 EDC_SYNC_FILES_USER = None
 EDC_SYNC_FILES_REMOTE_HOST = None

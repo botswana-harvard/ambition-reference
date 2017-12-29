@@ -1,8 +1,8 @@
 from edc_reference import site_reference_configs
-from edc_visit_schedule.site_visit_schedules import site_visit_schedules
 
 site_reference_configs.register_from_visit_schedule(
-    site_visit_schedules=site_visit_schedules)
+    visit_models={
+        'edc_appointment.appointment': 'ambition_subject.subjectvisit'})
 
 configs = {
     'ambition_subject.prnmodel': [
