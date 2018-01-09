@@ -5,9 +5,6 @@ site_reference_configs.register_from_visit_schedule(
         'edc_appointment.appointment': 'ambition_subject.subjectvisit'})
 
 configs = {
-    'ambition_subject.prnmodel': [
-        'blood_result', 'microbiology', 'radiology', 'lumbar_puncture',
-        'cd4', 'viral_load', 'fbc', 'chemistry'],
     'ambition_subject.education': ['household_head'],
     'ambition_subject.patienthistory': ['cd4_date', 'viral_load_date'],
     'ambition_subject.medicalexpenses': ['care_before_hospital'],
