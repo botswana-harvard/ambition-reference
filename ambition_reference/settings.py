@@ -20,6 +20,7 @@ APP_NAME = 'ambition_reference'
 ETC_DIR = os.path.join(BASE_DIR, 'etc')
 
 SITE_ID = 40
+REVIEWER_SITE_ID = 0
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
